@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block content %}
+    <div class="main">
+    <p>{{ msg }}</p>
+        <form action="/login" method="POST">
+            <input id="fldName" type="text" placeholder="Username" name="username" required>
+            <input id="fldPass" type="password" placeholder="Password" name="password" required>
+            <button class="submit" type="submit">Login</button>
+        </form>
+    <p>Don't have an account? <a href="register">Create one!</a></p>
+    </div>
+{% endblock %}
